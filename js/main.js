@@ -8,4 +8,11 @@ let currentNav = document.querySelector("nav ul li")
 console.info(currentNav)
 currentNav.setAttribute("class","currentPage")
 document.querySelector("nav ul li a").setAttribute("href", "https://www.google.co.uk/")
+let eventBtn=document.getElementById("myTestEvent")
+eventBtn.addEventListener("click",myEvent)
+function myEvent(ev){
+    console.dir(ev)
+    console.info("I was clicked")
+}
+
 })()
